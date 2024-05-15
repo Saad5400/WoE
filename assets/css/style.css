@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap");
 
 :root {
-  --background: #111921;
-  --foreground: #ffffff;
-  --primary: #00fbed;
-  --primary-foreground: #131313;
-  --secondary: #231829;
-  --input: #1e202a;
-  --input-border: #324374;
-  --input-hover: #312f44;
-  --input-border-hover: #5d60ff;
+  --background: 17, 25, 33;
+  --foreground: 255, 255, 255;
+  --primary: 0, 251, 237;
+  --primary-foreground: 19, 19, 19;
+  --secondary: 239, 64, 255;
+  --input: 30, 32, 42;
+  --input-border: 95, 96, 99;
 }
 
 * {
@@ -33,13 +31,13 @@
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  color: var(--foreground);
-  background-color: var(--input);
+  color: rgba(var(--foreground));
+  background-color: rgba(var(--input));
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   margin-right: -10px;
-  border: 1px solid var(--input-border);
+  border: 1px solid rgba(var(--input-border));
   border-radius: 10px;
 }
 .contact-form input[type="text"]:hover,
@@ -49,8 +47,8 @@
   border-color: var(--input-border-hover);
 }
 .contact-form button {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  background-color: rgba(var(--primary));
+  color: rgba(var(--primary-foreground));
   width: 30%;
   padding: 10px;
   margin-top: 10px;
@@ -59,10 +57,11 @@
   cursor: pointer;
 }
 .contact-form button:hover {
-  background-color: var(--input-border);
+  background-color: rgba(var(--input-border));
 }
+
 body {
-  background-color: var(--background);
+  background-color: rgba(var(--background));
   background-image: linear-gradient(
     to bottom left,
     rgba(255, 0, 0, 0),
@@ -71,7 +70,7 @@ body {
     rgba(255, 0, 0, 0)
   );
   background-attachment: fixed;
-  color: var(--foreground);
+  color: rgba(var(--foreground));
   font-family: "Changa", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -96,9 +95,8 @@ body {
 
 .icon-button {
   background: none;
-  /* border: var(--primary) 1px solid; */
-  /*  */
-  color: var(--primary);
+  border: rgba(var(--primary), 0.2) 1px solid;
+  color: rgba(var(--primary));
   cursor: pointer;
   display: inline-block;
   padding: 0.5rem;
