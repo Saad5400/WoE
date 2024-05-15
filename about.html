@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="AR" dir="rtl">
+    
 
 <head>
     <meta charset="UTF-8">
@@ -7,40 +8,55 @@
     <title>About</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <style>
+    <style> /* class center to align the main subject in the about page*/
         .center {
-            text-align: center;
              margin-left: 900px;
              
         }
-
+ /* style for any paragraph to be skyblue*/
         p {
             color: #00d9ff;
+                display: none;
+             
+              
         }
+        body{
+            margin: 2rem;
+          }
+         div:hover p {
+            display: block;
+          }
+          div.about2:hover p {
+            display: block;
+          }
+        
     </style>
 </head>
 
 <body>
     <img src="./assets/images/Logo.png" alt="Logo" style="width: 15rem">
    
-    <h1 class="center" style="color:rgb(var(--secondary))"; >  من نحن</h1>
-
+    <div><h1 class="center" style="color:rgb(var(--secondary))"; >  من نحن</h1>
+    <!-- spacing -->
     <br>
-<p style="font-size : 2rem">
-  مرحبًا بكم في عالم الراحة والأناقة في Cyber chair
-
-   </p>
-
-   <p style="max-width : 45rem"> في Cyber chair، نؤمن بأن الكرسي أكثر من مجرد قطعة أثاث؛ إنه رفيقك في كل لحظة، سواء كنت تعمل، تتعلم، تسترخي، أو تجتمع مع الأحباء. نحن نقدم تشكيلة واسعة من الكراسي التي تجمع بين الأناقة العصرية والراحة القصوى، مصممة لتناسب كل أسلوب حياة وكل غرفة في منزلك.
-
-   </p>
-   <br>
-<h1 class="center" style="color:rgb(var(--secondary))";>رؤيتنا</h1>
-<p style="max-width : 45rem">
-  نسعى لإحداث ثورة في عالم الأثاث من خلال تقديم تصاميم مبتكرة تلبي احتياجات العصر الحديث. نحن نتبنى التكنولوجيا والابتكار لنقدم لكم كراسي ليست فقط جميلة، بل ذكية ومريحة.  
-  </p>
-  <h1 class="center" style="color:rgb(var(--secondary))";>  قيمنا </h1>
-  
+    <!--making a starter for the paragrapgh bigger for looks also -->
+    
+    <p style="font-size : 2rem">
+    مرحبًا بكم في عالم الراحة والأناقة في Cyber chair
+    
+    </p>  
+    <!-- max width so the text doesn't go beyond mid of the page -->
+    <p style="max-width : 45rem"> في Cyber chair، نؤمن بأن الكرسي أكثر من مجرد قطعة أثاث؛ إنه رفيقك في كل لحظة، سواء كنت تعمل، تتعلم، تسترخي، أو تجتمع مع الأحباء. نحن نقدم تشكيلة واسعة من الكراسي التي تجمع بين الأناقة العصرية والراحة القصوى، مصممة لتناسب كل أسلوب حياة وكل غرفة في منزلك.
+    
+    </p></div>
+    <br>
+    <div class="about2"><h1 class="center" style="color:rgb(var(--secondary))";>رؤيتنا</h1>
+    <br>
+    <p style="max-width : 45rem">
+    نسعى لإحداث ثورة في عالم الأثاث من خلال تقديم تصاميم مبتكرة تلبي احتياجات العصر الحديث. نحن نتبنى التكنولوجيا والابتكار لنقدم لكم كراسي ليست فقط جميلة، بل ذكية ومريحة.  
+    </p></div>
+    <br>
+    <h1 class="center" style="color:rgb(var(--secondary))";>  قيمنا </h1>
 </body>
 
 </html>
