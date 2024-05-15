@@ -6,13 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        img {  width: 20vw; }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #5f606327;
+            border-radius: 20%;
+            padding: 50px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+       
+    </style>
 </head>
 
 <body>
-<h1>
-    This is a test
-    سلام عليكم
-</h1>
+    <h1>
+        cyberchairs
+    </h1>
+    <div class="grid-container">
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair1.png" alt="chair1">
+                <p>chair1</p>
+                <p>$59.99</p>
+            </a></div>
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair2.png" alt="chair2">
+                <p>chair2</p>
+                <p>$19.99</p>
+            </a></div>
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair3.png" alt="chair3">
+                <p>chair3</p>
+                <p>$19.99</p>
+            </a></div>
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair4.png" alt="chair4">
+                <p>chair4</p>
+                <p>$19.99</p>
+            </a></div>
+    </div>
+
 </body>
 
 </html>
