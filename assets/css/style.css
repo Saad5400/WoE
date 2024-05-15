@@ -1,24 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap");
 
 :root {
-    --background: #111921;
-    --foreground: #ffffff;
-    --primary: #00fbed;
-    --primary-foreground: #131313;
-    --secondary: #231829;
+  --background: #111921;
+  --foreground: #ffffff;
+  --primary: #00fbed;
+  --primary-foreground: #131313;
+  --secondary: #231829;
+  --input: #1e202a;
+  --input-border: #5f6063;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: var(--background);
-    color: var(--foreground);
-    font-family: 'Changa', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Changa", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+.contact-form h1,
+.contact-form p {
+  text-align: center;
+}
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  color: var(--foreground);
+  background-color: var(--input);
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: -10px;
+  border: 1px solid var(--input-border);
+  border-radius: 10px;
+}
+.contact-form button {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: var(--input-border);
 }
