@@ -6,13 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        img {  width: 250px;}
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+            gap: 30px;
+            background-color: var(--background-color);
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: var(--background-color);
+            border: 1px solid ;
+            border-radius:20px ;
+            padding: 50px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+       
+    </style>
 </head>
 
 <body>
-<h1>
-    cyberchairs
-</h1>
-
+    <h1>
+        cyberchairs
+    </h1>
+    <div class="grid-container">
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair1.png" alt="chair1">
+                <p>chair1</p>
+                <p>$59.99</p>
+            </a></div>
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair2.png" alt="chair2">
+                <p>chair2</p>
+                <p>$19.99</p>
+            </a></div>
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair3.png" alt="chair3">
+                <p>chair3</p>
+                <p>$19.99</p>
+            </a></div>
+        <div class="grid-item"><a href="product1.html">
+                <img src="assets/images/chair4.png" alt="chair4">
+                <p>chair4</p>
+                <p>$19.99</p>
+            </a></div>
+    </div>
 
 </body>
 
