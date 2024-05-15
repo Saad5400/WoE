@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap");
 
 :root {
     --background: 17, 25, 33;
@@ -6,11 +6,52 @@
     --primary: 0, 251, 237;
     --primary-foreground: 19, 19, 19;
     --secondary: 35, 24, 41;
+    --input: 30, 32, 42;
+    --input-border: 95, 96, 99;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+.contact-form h1,
+.contact-form p {
+  text-align: center;
+}
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  color: rgba(var(--foreground));
+  background-color: rgba(var(--input));
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: -10px;
+  border: 1px solid rgba(var(--input-border));
+  border-radius: 10px;
+}
+.contact-form button {
+  background-color: rgba(var(--primary));
+  color: rgba(var(--primary-foreground));
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: rgba(var(--input-border));
 }
 
 body {
@@ -26,18 +67,18 @@ body {
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .icon-button {
