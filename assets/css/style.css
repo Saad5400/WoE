@@ -7,7 +7,9 @@
   --primary-foreground: #131313;
   --secondary: #231829;
   --input: #1e202a;
-  --input-border: #5f6063;
+  --input-border: #324374;
+  --input-hover: #312f44;
+  --input-border-hover: #5d60ff;
 }
 
 * {
@@ -39,6 +41,12 @@
   margin-right: -10px;
   border: 1px solid var(--input-border);
   border-radius: 10px;
+}
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+  background-color: var(--input-hover);
+  border-color: var(--input-border-hover);
 }
 .contact-form button {
   background-color: var(--primary);
