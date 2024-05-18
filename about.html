@@ -16,16 +16,15 @@
         }
 
         /* style for any paragraph to be skyblue*/
-        p {
+        p, ul {
             color: #00d9ff;
-            display: none;
-
-
+            height: 0;
+            overflow-y: hidden;
+            transition: height 0.5s;
         }
 
-        ul {
-            color: #00d9ff;
-            display: none;
+        html {
+            scrollbar-gutter: stable;
         }
 
         body {
@@ -34,23 +33,23 @@
 
         /* an about class from 1 to 5 just for the hover display effect*/
         div.about1:hover p {
-            display: block;
+            height: 10rem;
         }
 
         div.about2:hover p {
-            display: block;
+            height: 10rem;
         }
 
         div.about3:hover ul {
-            display: block;
+            height: 10rem;
         }
 
         div.about4:hover p {
-            display: block;
+            height: 10rem;
         }
 
         div.about5:hover p {
-            display: block;
+            height: 10rem;
         }
 
         /* this halfp class is to limit the wisth of a paragraph to half the site not more than that */
