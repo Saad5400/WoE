@@ -20,23 +20,40 @@
              
               
         }
+       ul {
+          color: #00d9ff;
+              display: none;   
+      }
         body{
             margin: 2rem;
           }
-         div:hover p {
+          /* an about class from 1 to 5 just for the hover display effect*/
+         div.about1:hover p {
             display: block;
           }
           div.about2:hover p {
             display: block;
           }
-        
+          div.about3:hover ul {
+            display: block;
+          }
+          div.about4:hover p {
+            display: block;
+          }
+          div.about5:hover p {
+            display: block;
+          }
+          /* this halfp class is to limit the wisth of a paragraph to half the site not more than that */
+          p.halfp {
+          max-width : 45rem
+          }
     </style>
 </head>
 
 <body>
     <img src="./assets/images/Logo.png" alt="Logo" style="width: 15rem">
    
-    <div><h1 class="center" style="color:rgb(var(--secondary))"; >  من نحن</h1>
+    <div class="about1"><h1 class="center" style="color:rgb(var(--secondary))"; >  من نحن</h1>
     <!-- spacing -->
     <br>
     <!--making a starter for the paragrapgh bigger for looks also -->
@@ -46,17 +63,36 @@
     
     </p>  
     <!-- max width so the text doesn't go beyond mid of the page -->
-    <p style="max-width : 45rem"> في Cyber chair، نؤمن بأن الكرسي أكثر من مجرد قطعة أثاث؛ إنه رفيقك في كل لحظة، سواء كنت تعمل، تتعلم، تسترخي، أو تجتمع مع الأحباء. نحن نقدم تشكيلة واسعة من الكراسي التي تجمع بين الأناقة العصرية والراحة القصوى، مصممة لتناسب كل أسلوب حياة وكل غرفة في منزلك.
+    <p class="halfp"> في Cyber chair، نؤمن بأن الكرسي أكثر من مجرد قطعة أثاث؛ إنه رفيقك في كل لحظة، سواء كنت تعمل، تتعلم، تسترخي، أو تجتمع مع الأحباء. نحن نقدم تشكيلة واسعة من الكراسي التي تجمع بين الأناقة العصرية والراحة القصوى، مصممة لتناسب كل أسلوب حياة وكل غرفة في منزلك.
     
     </p></div>
     <br>
+    <!-- every about called class makes the writing appear for every paragraph or  list -->
     <div class="about2"><h1 class="center" style="color:rgb(var(--secondary))";>رؤيتنا</h1>
     <br>
-    <p style="max-width : 45rem">
+    <p class="halfp">
     نسعى لإحداث ثورة في عالم الأثاث من خلال تقديم تصاميم مبتكرة تلبي احتياجات العصر الحديث. نحن نتبنى التكنولوجيا والابتكار لنقدم لكم كراسي ليست فقط جميلة، بل ذكية ومريحة.  
     </p></div>
     <br>
-    <h1 class="center" style="color:rgb(var(--secondary))";>  قيمنا </h1>
+    <div class="about3"><h1 class="center" style="color:rgb(var(--secondary))";>  قيمنا </h1>
+    <br>
+<ul style="max-width : 45rem">
+  <li>
+  الجودة: نستخدم أفضل المواد وأحدث التقنيات لضمان الجودة والمتانة.
+</li> <li>
+      الابتكار: نتابع أحدث الاتجاهات وندمجها في تصاميمنا لنقدم لكم منتجات فريدة.
+    </li> <li>
+      الراحة: نضع راحتكم في صميم كل ما نقوم به، من التصميم إلى التوصيل. </li></ul> </div>
+      <br>
+     <div class="about4"><h1 class="center" style="color:rgb(var(--secondary))";>  فريقنا </h1>
+      <p class="halfp">وراء كل كرسي، هناك فريق من المصممين والحرفيين المتفانين الذين يعملون بلا كلل لتحقيق رؤيتنا.<br> <!-- I made spaces for correct shape an grammar <3-->
+        نحن نفخر بفريقنا الذي يجمع بين الخبرة والشغف لإنتاج كراسي تستحق أن تكون جزءًا من قصص حياتكم.</p>
+    </div> <br>
+
+      <div class="about5"> <h1 class="center" style="color:rgb(var(--secondary))";>  انضم إلينا </h1>
+ 
+      <p class="halfp">اكتشف مجموعتنا الواسعة واختر الكرسي الذي يعبر عنك. في Cyber chair،
+        <br>نحن هنا لنجعل كل لحظة تقضيها جالسًا تجربة لا تُنسى.</p>     </div>
 </body>
 
 </html>
