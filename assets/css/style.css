@@ -38,6 +38,7 @@
   margin-top: 5px;
   margin-right: -10px;
   border: 1px solid rgba(var(--input-border));
+  transition: all 0.3s;
   border-radius: 10px;
 }
 .contact-form input[type="text"]:hover,
@@ -55,9 +56,10 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .contact-form button:hover {
-  background-color: rgba(var(--input-border));
+  scale: 105%;
 }
 
 body {
