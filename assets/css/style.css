@@ -103,6 +103,14 @@ body {
   justify-content: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .items-start {
   align-items: flex-start;
 }
