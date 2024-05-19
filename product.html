@@ -6,11 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        a.buy {
+            background-color: rgba(var(--primary));
+            color: rgba(var(--primary-foreground));
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        a.buy:hover {
+            background-color: rgba(var(--primary-foreground));
+            color: rgba(var(--primary));
+        }
+
+        figure {
+            transition: transform 0.3s;
+        }
+
+        figure:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body class="flex flex-col justify-center items-center min-h-screen">
-    <main>
-        <img src="./assets/images/chair1.png" alt="chair" >
+    <main class="flex flex-col flex-md-row-reverse">
+        <figure style="max-width: 20rem;">
+            <img src="./assets/images/chair1.png" alt="chair" style="width: 100%;">
+        </figure>
+        <div class="flex flex-col justify-between items-start" style="min-height: 15rem; min-width: 20rem;">
+            <article style="text-align: start;">
+                <h1>كرسي مكتبي</h1>
+                <p>الوصف: كرسي مكتبي مريح</p>
+            </article>
+            <div style="width: 15rem;" class="flex flex-col">
+                <p style="width: 100%">السعر: 100$</p>
+                <a href="./contact.html" style="width: 100%; text-align: center;" class="buy">اطلبه الان</a>
+            </div>
+        </div>
     </main>
 </body>
 

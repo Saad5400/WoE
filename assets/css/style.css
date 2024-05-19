@@ -89,6 +89,12 @@ body {
   flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .flex-md-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
 .justify-between {
   justify-content: space-between;
 }
