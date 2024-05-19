@@ -41,6 +41,7 @@ document.getElementById('activeImage').innerHTML = document.getElementById('imag
 document.getElementsByTagName('h1')[0].innerText = currentProduct.name;
 document.getElementById('description').innerText = currentProduct.description;
 document.getElementById('price').innerText = currentProduct.price + ' ريال';
+document.title = currentProduct.name;
 
 function setActiveImage(element) {
     const activeImage = document.getElementById('activeImage');
