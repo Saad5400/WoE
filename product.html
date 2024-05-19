@@ -46,32 +46,29 @@
                 <figure
                     style="max-width: 2.5rem; border: 1px solid rgba(var(--primary)); border-radius: 15%; overflow: hidden; cursor: pointer;"
                     onclick="setActiveImage(this)">
-                    <img src="./assets/images/chair1.png" alt="chair" style="width: 100%;">
+                    <img id="image" src="./assets/images/chair1.png" alt="chair" style="width: 100%;">
                 </figure>
-                <figure
-                    style="max-width: 2.5rem; border-radius: 15%; overflow: hidden; cursor: pointer;"
+                <figure style="max-width: 2.5rem; border-radius: 15%; overflow: hidden; cursor: pointer;"
                     onclick="setActiveImage(this)">
-                    <img src="./assets/images/chair1.png" alt="chair" style="width: 100%;">
+                    <video alt="chair" style="width: 100%;">
+                        <source id="video" src="./assets/videos/chair1.mp4" type="video/mp4">
+                    </video>
                 </figure>
             </div>
         </div>
         <div class="flex flex-col justify-between items-start" style="min-height: 15rem; min-width: 20rem;">
             <article style="text-align: start;">
                 <h1>كرسي مكتبي</h1>
-                <p>الوصف: كرسي مكتبي مريح</p>
+                <p id="description">الوصف: كرسي مكتبي مريح</p>
             </article>
             <div style="width: 15rem;" class="flex flex-col">
-                <p style="width: 100%">السعر: 100$</p>
+                <p id="price" style="width: 100%">السعر: 100$</p>
                 <a href="./contact.html" style="width: 100%; text-align: center;" class="buy">اطلبه الان</a>
             </div>
         </div>
     </main>
 
-    <script>
-        function setActiveImage(element) {
-            
-        }
-    </script>
+    <script src="./assets/js/product.js" lang="javascript"></script>
 </body>
 
 </html>
