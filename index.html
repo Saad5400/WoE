@@ -7,8 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-        img {  width: 20vw; }
-        
+        img {
+            width: 20vw;
+        }
+
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
@@ -17,15 +19,23 @@
         }
 
         .grid-item {
-            background-color: #5f606327;
+            background-color: rgba(var(--background), 0.6);
             border-radius: 20%;
             padding: 50px;
             font-size: 20px;
             text-align: left;
+            /* TODO: add transition */
         }
-     
 
-       
+        .grid-item p {
+            color: rgba(var(--primary));
+            /* TODO: add transition */
+        }
+
+        /* TODO: add grid item and grid item p hover */
+
+        /* TODO: add media query to change grid-template-columns to 2 when screen width is less than 768px */
+        /* TODO: add media query to change grid-template-columns to 1 when screen width is less than 576px */
     </style>
 </head>
 
