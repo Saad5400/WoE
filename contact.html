@@ -5,7 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تواصل معنا</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+.contact-form h1,
+.contact-form p {
+  text-align: center;
+}
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="MobileNumber"],
+.contact-form textarea {
+  color: rgba(var(--foreground));
+  background-color: rgba(var(--input));
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: -10px;
+  border: 1px solid rgba(var(--input-border));
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+  background-color: var(--input-hover);
+  border-color: var(--input-border-hover);
+}
+.contact-form button {
+  background-color: rgba(var(--primary));
+  color: rgba(var(--primary-foreground));
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.contact-form button:hover {
+  scale: 105%;
+}
+
+    </style>
   </head>
+  
 
   <body>
     <div class="contact-form">
@@ -31,10 +83,20 @@
         </div>
         <label for="email">الإيميل *</label>
         <input
+          pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
           type="email"
           id="email"
           name="email"
           placeholder="مثال: ahemd@gmail.com"
+          required
+        />
+        <label for="MobileNumber">رقم الجوال *</label>
+        <input
+          pattern="[966][0-9]{9}"
+          type="MobileNumber"
+          id="MobileNumber"
+          name="MobileNumber"
+          placeholder="مثال: 966500000000"
           required
         />
 

@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="/assets/images/Logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="/assets/images/Logo.png" />
     <style>
-        img {
-            width: 20vw;
+        img{
+            max-width: 100%;
         }
 
         .grid-container {
@@ -37,36 +37,58 @@
 
         /* TODO: add media query to change grid-template-columns to 2 when screen width is less than 768px */
         /* TODO: add media query to change grid-template-columns to 1 when screen width is less than 576px */
+        /* Container for flexboxes */
+        /* Container for flexboxes */
+
+        
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .grid-container {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+
+            }
+        }
     </style>
 </head>
 
 <body>
-    <h1>
-        cyberchairs
-    </h1>
+    <h1>cyberchairs</h1>
     <div class="grid-container">
-        <div class="grid-item"><a href="product.html?id=1">
-                <img src="assets/images/chair1.png" alt="chair1">
+        <div class="grid-item">
+            <a href="product.html?id=1">
+                <img src="assets/images/chair1.png" alt="chair1" />
                 <p>chair1</p>
                 <p>$59.99</p>
-            </a></div>
-        <div class="grid-item"><a href="product.html?id=2">
-                <img src="assets/images/chair2.png" alt="chair2">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="product.html?id=2">
+                <img src="assets/images/chair2.png" alt="chair2" />
                 <p>chair2</p>
                 <p>$19.99</p>
-            </a></div>
-        <div class="grid-item"><a href="product.html?id=3">
-                <img src="assets/images/chair3.png" alt="chair3">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="product.html?id=3">
+                <img src="assets/images/chair3.png" alt="chair3" />
                 <p>chair3</p>
                 <p>$69.99</p>
-            </a></div>
-        <div class="grid-item"><a href="product.html?id=4">
-                <img src="assets/images/chair4.png" alt="chair4">
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="product.html?id=4">
+                <img src="assets/images/chair4.png" alt="chair4" />
                 <p>chair4</p>
                 <p>$65.99</p>
-            </a></div>
+            </a>
+        </div>
     </div>
-
 </body>
 
 </html>
