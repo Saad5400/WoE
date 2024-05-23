@@ -177,3 +177,18 @@ nav button.icon-button {
     height: fit-content !important;
   }
 }
+
+.neon-text {
+  color: #fff;
+  /* White text color */
+  text-shadow:
+      0 0 5px #fff,
+      /* White glow */
+      0 0 20px #f7007b,
+      /* Pink glow */
+      0 0 30px #ff4da6,
+      /* Pink glow */
+      0 0 70px #ff4da6;
+  /* Pink glow */
+  animation: glow 1s ease-in-out infinite alternate;
+}
