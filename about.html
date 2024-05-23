@@ -7,46 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-<center>
- <h2 class="neon-text" style="font-size : 2rem"> 
-    مرحبًا بكم في عالم الراحة والأناقة  Cyber chair </h2></center>
-       
-
+    <h2 class="neon-text" style="font-size : 2rem">
+        مرحبًا بكم في عالم الراحة والأناقة Cyber chair
+    </h2>
     <style>
         /* style for any paragraph to be skyblue*/
-        p, ul  {
+        p,
+        ul {
             color: #00d9ff;
             height: 0;
             overflow-y: hidden;
             transition: height 0.5s;
         }
-        .neon-text {
-            color: #fff; /* White text color */
-            text-shadow:
-              0 0 5px #fff, /* White glow */
-              0 0 20px #f7007b, /* Pink glow */
-              0 0 30px #ff4da6, /* Pink glow */ 
-              0 0 70px #ff4da6; /* Pink glow */
-          }
-          
 
-  
-  .neon-text {
-    animation: glow 1s ease-in-out infinite alternate;
-  }
+        .neon-text {
+            color: #fff;
+            /* White text color */
+            text-shadow:
+                0 0 5px #fff,
+                /* White glow */
+                0 0 20px #f7007b,
+                /* Pink glow */
+                0 0 30px #ff4da6,
+                /* Pink glow */
+                0 0 70px #ff4da6;
+            /* Pink glow */
+        }
+
+        .neon-text {
+            animation: glow 1s ease-in-out infinite alternate;
+        }
 
         html {
             scrollbar-gutter: stable;
         }
 
         body {
-            margin: 2rem;
             text-align: center;
         }
 
         /* an about class from 1 to 5 just for the hover display effect*/
         div.about1:hover p {
-            height: 5rem;
+            height: 6rem;
         }
 
         div.about2:hover p {
@@ -58,16 +60,17 @@
         }
 
         div.about4:hover p {
-            height: 3rem;
+            height: 5rem;
         }
 
         div.about5:hover p {
             height: 3rem;
         }
-        
+
 
         /* this halfp class is to limit the wisth of a paragraph to half the site not more than that */
-        p.halfp, ul {
+        p.halfp,
+        ul {
             max-width: 45rem;
             margin: auto;
         }
@@ -75,15 +78,16 @@
 </head>
 
 <body>
-    <img src="./assets/images/Logo.png" alt="Logo" style="width: 15rem"> 
+    <script src="./assets//js/navbar.js" lang="javascript"></script>
+    <img src="./assets/images/Logo.png" alt="Logo" style="width: 15rem">
 
     <div class="about1">
         <h1 class="center" style="color:rgb(var(--secondary))" ;> من نحن</h1>
         <!-- spacing -->
-        
+
         <!--making a starter for the paragrapgh bigger for looks also -->
 
-       
+
         <!-- max width so the text doesn't go beyond mid of the page -->
         <p class="halfp"> في Cyber chair، نؤمن بأن الكرسي أكثر من مجرد قطعة أثاث؛ إنه رفيقك في كل لحظة، سواء كنت تعمل،
             تتعلم، تسترخي، أو تجتمع مع الأحباء. نحن نقدم تشكيلة واسعة من الكراسي التي تجمع بين الأناقة العصرية والراحة
@@ -91,20 +95,20 @@
 
         </p>
     </div>
-    
+
     <!-- every about called class makes the writing appear for every paragraph or  list -->
     <div class="about2">
         <h1 class="center" style="color:rgb(var(--secondary))" ;>رؤيتنا</h1>
-        
+
         <p class="halfp">
             نسعى لإحداث ثورة في عالم الأثاث من خلال تقديم تصاميم مبتكرة تلبي احتياجات العصر الحديث. نحن نتبنى
             التكنولوجيا والابتكار لنقدم لكم كراسي ليست فقط جميلة، بل ذكية ومريحة.
         </p>
     </div>
-    
+
     <div class="about3">
         <h1 class="center" style="color:rgb(var(--secondary))" ;> قيمنا </h1>
-        
+
         <ul>
             <li>
                 الجودة: نستخدم أفضل المواد وأحدث التقنيات لضمان الجودة والمتانة.
@@ -116,16 +120,18 @@
                 الراحة: نضع راحتكم في صميم كل ما نقوم به، من التصميم إلى التوصيل. </li>
         </ul>
     </div>
-    
+
     <div class="about4">
         <h1 class="center" style="color:rgb(var(--secondary))" ;> فريقنا </h1>
         <p class="halfp">وراء كل كرسي، هناك فريق من المصممين والحرفيين المتفانين الذين يعملون بلا كلل لتحقيق رؤيتنا.
             <!-- I made spaces for correct shape an grammar <3-->
-            نحن نفخر بفريقنا الذي يجمع بين الخبرة والشغف لإنتاج كراسي تستحق أن تكون جزءًا من قصص حياتكم.</p>
-    </div> 
+            نحن نفخر بفريقنا الذي يجمع بين الخبرة والشغف لإنتاج كراسي تستحق أن تكون جزءًا من قصص حياتكم.
+        </p>
+    </div>
 
     <div class="about5">
-        <h1 class="center" style="color:rgb(var(--secondary))" ;> <a href="./index.html" , style="color:rgb(var(--secondary))" ;> انضم إلينا </a></h1>
+        <h1 class="center" style="color:rgb(var(--secondary))" ;> <a href="./index.html" ,
+                style="color:rgb(var(--secondary))" ;> انضم إلينا </a></h1>
 
         <p class="halfp">اكتشف مجموعتنا الواسعة واختر الكرسي الذي يعبر عنك. في Cyber chair،
             نحن هنا لنجعل كل لحظة تقضيها جالسًا تجربة لا تُنسى.
