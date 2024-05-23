@@ -12,6 +12,10 @@
             max-width: 100%;
         }
 
+        a, p {
+            color: inherit;
+        }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -25,18 +29,16 @@
             padding: 50px;
             font-size: 20px;
             text-align: left;
-            transition: all 0.3s; 
-        }
-
-        .grid-item p {
+            transition: all 0.5s; 
+            transition:;
+            transition-delay:all 0.3s;
             color: rgba(var(--primary));
-            transition: all 0.3s;
         }
 
         /* TODO: add grid item and grid item p hover */
         .grid-item:hover{
             background-color: rgba(var(--primary));
-            text-decoration-color: var(--primary-foreground);
+            color: rgba(var(--primary-foreground));
         }
 
         /* Large */
@@ -72,28 +74,28 @@
             <a href="product.html?id=1">
                 <img src="assets/images/chair1.png" alt="chair1" />
                 <p>chair1</p>
-                <p>$59.99</p>
+                <p>100SAR</p>
             </a>
         </div>
         <div class="grid-item">
             <a href="product.html?id=2">
                 <img src="assets/images/chair2.png" alt="chair2" />
                 <p>chair2</p>
-                <p>$19.99</p>
+                <p>100SAR</p>
             </a>
         </div>
         <div class="grid-item">
             <a href="product.html?id=3">
                 <img src="assets/images/chair3.png" alt="chair3" />
                 <p>chair3</p>
-                <p>$69.99</p>
+                <p>100SAR</p>
             </a>
         </div>
         <div class="grid-item">
             <a href="product.html?id=4">
                 <img src="assets/images/chair4.png" alt="chair4" />
                 <p>chair4</p>
-                <p>$65.99</p>
+                <p>100SAR</p>
             </a>
         </div>
     </div>
