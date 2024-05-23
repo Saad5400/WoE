@@ -9,68 +9,9 @@
 </head>
 
 <body>
-    <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>عرض البيانات</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
-<body>
-  <div class="display-form">
-    <h1>بيانات المرسل</h1>
-    <p>هذه هي البيانات التي تم إرسالها:</p>
-    <div id="form-data"></div>
-    <button onclick="goBack()">عودة</button>
-  </div>
-
-  <script src="./assets/js/display.js"></script>
-</body>
-
-</html>
-
+    
     <script src="./assets//js/navbar.js" lang="javascript"></script>
     <script>
-        // Function to get query parameters from URL
-function getQueryParams() {
-  let params = {};
-  let queryString = window.location.search.substring(1);
-  let regex = /([^&=]+)=([^&]*)/g;
-  let match;
-  while (match = regex.exec(queryString)) {
-    params[decodeURIComponent(match[1])] = decodeURIComponent(match[2]);
-  }
-  return params;
-}
-
-// Function to display the form data
-function displayFormData() {
-  const formDataDiv = document.getElementById('form-data');
-  const params = getQueryParams();
-
-  const fullName = `${params.firstName} ${params.lastName}`;
-  const email = params.email;
-  const mobileNumber = params.MobileNumber;
-  const message = params.message;
-
-  formDataDiv.innerHTML = `
-    <p><strong>الاسم كامل:</strong> ${fullName}</p>
-    <p><strong>الإيميل:</strong> ${email}</p>
-    <p><strong>رقم الجوال:</strong> ${mobileNumber}</p>
-    <p><strong>الرسالة:</strong> ${message}</p>
-  `;
-}
-
-// Function to go back to the previous page
-function goBack() {
-  window.history.back();
-}
-
-// Execute the function to display form data when the page loads
-document.addEventListener('DOMContentLoaded', displayFormData);
 
     </script>
 
