@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" href="/assets/images/Logo.png" />
     <style>
-        img{
+        img {
             max-width: 100%;
         }
 
         .grid-container {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 30px;
             padding: 10px;
         }
@@ -35,19 +35,22 @@
 
         /* TODO: add grid item and grid item p hover */
 
-        /* TODO: add media query to change grid-template-columns to 2 when screen width is less than 768px */
-        /* TODO: add media query to change grid-template-columns to 1 when screen width is less than 576px */
-        /* Container for flexboxes */
-        /* Container for flexboxes */
 
-        
-        @media screen and (max-width: 768px) {
+        /* Large */
+        @media screen and (max-width: 1500px) {
             .grid-container {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
 
+        /* Medium */
+        @media screen and (max-width: 1000px) {
+            .grid-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* Small */
         @media screen and (max-width: 576px) {
             .grid-container {
                 grid-template-columns: repeat(1, minmax(0, 1fr));
