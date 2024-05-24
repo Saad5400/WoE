@@ -2,7 +2,7 @@
 
 :root {
   --background: 17, 25, 33;
-  --foreground: 19, 19, 19;
+  --foreground: 255, 255, 255;
   --primary: 0, 251, 237;
   --primary-foreground: 19, 19, 19;
   --secondary: 239, 64, 255;
