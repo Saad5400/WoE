@@ -69,25 +69,39 @@
 <body>
   <script src="./assets//js/navbar.js" lang="javascript"></script>
   <div class="contact-form">
-    <h1>تواصل معنا</h1>
-    <p>الرجاء تعبئة النموذج بعناية.</p>
+    <h1>
+      Contact Us
+    </h1>
+    <p>
+      Fill out the form below to contact us.
+    </p>
     <form action="/submit_form" method="post">
-      <label for="fullName">الاسم كامل *</label>
+      <label for="fullName">
+        Full Name*
+      </label>
       <div class="name-inputs">
-        <input type="text" id="firstName" name="firstName" placeholder="الاسم الاول" required />
-        <input type="text" id="lastName" name="lastName" placeholder="الاسم الاخير" required />
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
       </div>
-      <label for="email">الإيميل *</label>
+      <label for="email">
+        Email*
+      </label>
       <input pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" id="email"
-        name="email" placeholder="مثال: ahemd@gmail.com" required />
-      <label for="MobileNumber">رقم الجوال *</label>
+        name="email" placeholder="Example: example@xyz.com" required />
+      <label for="MobileNumber">
+        Mobile Number*
+      </label>
       <input pattern="^\+9665\d{8}$" type="text" id="MobileNumber" name="MobileNumber"
         placeholder="Example: +9665xxxxxxxx" required />
 
-      <label for="message">الرسالة *</label>
+      <label for="message">
+        Message*
+      </label>
       <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">ارسال</button>
+      <button type="submit">
+        Submit
+      </button>
     </form>
   </div>
 
