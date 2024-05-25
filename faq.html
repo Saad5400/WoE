@@ -6,13 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .faq {
+            background-color: rgba(var(--primary));
+            color: rgba(var(--primary-foreground));
+            min-width: min(90dvw, 40rem);
+            padding: 1rem;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(var(--primary-foreground), 0.5);
+        }
+
+        .question {
+            font-size: 1.5rem;
+            border-radius: 0.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            transform: rotate(90deg);
+            transition: all 0.35s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .answer {
+            font-size: 1.25rem;
+            color: rgba(var(--primary-foreground), 0.8);
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.35s;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-inline-start: 1.5rem;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-inline-start: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
+    <script>
+        function toggleAnswer(clicked) {
+            const answer = clicked.querySelector('.answer');
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        }
+    </script>
+    <main>
+        <h1>FAQ</h1>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <div class="question">
+                Are the chairs real?
+            </div>
+            <div class="answer">
+                <ul>
+                    <li>Yes, the chairs are real.</li>
+                    <li>They are made of high-quality materials.</li>
+                    <li>They are designed to be comfortable and stylish.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <div class="question">
+                How long does shipping take?
+            </div>
+            <div class="answer">
+                <ol>
+                    <li>Shipping takes 3-5 business days.</li>
+                    <li>Shipping is free for orders over $100.</li>
+                    <li>Shipping is available worldwide.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <div class="question">
+                How can I pay for my order?
+            </div>
+            <div class="answer">
+                <ul>
+                    <li>You can pay with credit card.</li>
+                    <li>You can pay with PayPal.</li>
+                    <li>You can pay with Apple Pay.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
     <script src="./assets//js/navbar.js" lang="javascript"></script>
-
-    <!-- content here -->
-
     <script src="./assets//js/footer.js" lang="javascript"></script>
 </body>
 
