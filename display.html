@@ -6,23 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dispaly page</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        span {
+            color: rgba(var(--primary));
+        }
+
+        h2 {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 
+<!-- // http://127.0.0.1:5500/display.html?firstName=saad&lastName=Batwa&email=s%40s.s&MobileNumber=%2B966536439394&message=fsdfsdf+sdg+sg+dfg+ -->
+
 <body>
-    <h1>
-        data sent 
-    </h1>
-    <div>
-        
-    </div>
-    
-    <script src="./assets//js/navbar.js" lang="javascript"></script>
+    <main class="p-4">
+        <h1>
+            Thank you for contacting us! We have received your message:
+        </h1>
+        <h2>
+            Name: <span id="name"></span>
+        </h2>
+        <h2>
+            Email: <span id="email"></span>
+        </h2>
+        <h2>
+            Mobile Number: <span id="MobileNumber"></span>
+        </h2>
+        <h2>
+            Message: <span id="message"></span>
+        </h2>
+    </main>
     <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('firstName') + ' ' + urlParams.get('lastName');
+        const email = urlParams.get('email');
+        const MobileNumber = urlParams.get('MobileNumber');
+        const message = urlParams.get('message');
 
+        document.querySelector('#name').textContent = name;
+        document.querySelector('#email').textContent = email;
+        document.querySelector('#MobileNumber').textContent = MobileNumber;
+        document.querySelector('#message').textContent = message;
     </script>
-
-    <!-- content here -->
-
+    <script src="./assets//js/navbar.js" lang="javascript"></script>
     <script src="./assets//js/footer.js" lang="javascript"></script>
 </body>
 
