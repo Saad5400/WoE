@@ -1,5 +1,4 @@
 const footer = `<footer class="flex gap-4">
-<p style="height: auto; color: rgba(var(--primary-foreground))">جميع الحقوق محفوظة &copy; 2024</p>
 <div class="flex gap-2">
     <a href="https://x.com/SaadBatwa" class="icon-button" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">

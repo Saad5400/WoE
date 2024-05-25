@@ -17,9 +17,9 @@ const nav = `<nav class="flex justify-start">
 </button>
 <a href="./index.html" style="font-size: 1.5rem; display: inline-block !important;">CyberChair</a>
 <nav class="flex justify-start items-start">
-    <a href="./contact.html">تواصل معنا</a>
-    <a href="./about.html">من نحن</a>
-    <a href="./faq.html">الاسئلة الشائعة</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./about.html">Who Are We</a>
+    <a href="./faq.html">FAQ</a>
 </nav>
 </nav>`;
 
