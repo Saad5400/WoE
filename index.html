@@ -12,7 +12,8 @@
             max-width: 100%;
         }
 
-        a,p {
+        a,
+        p {
             color: inherit;
         }
 
@@ -63,40 +64,35 @@
 </head>
 
 <body>
-    <script src="./assets//js/navbar.js" lang="javascript"></script>
     <h2 class="neon-text" style="font-size: 2rem; padding: 1.5rem; padding-bottom: 0;">
-        مرحبًا بكم في عالم الراحة والأناقة Cyber Chair
+        Welcome to the world of comfort and elegance Cyber chair!
     </h2>
     <div class="grid-container">
-        <div class="grid-item">
+        <!-- <div class="grid-item">
             <a href="product.html?id=1">
                 <img src="assets/images/chair1.png" alt="chair1" />
-                <p>chair1</p>
-                <p>100SAR</p>
+                <p>CyberLuxe Lounge</p>
+                <b>499SAR</b>
             </a>
-        </div>
-        <div class="grid-item">
-            <a href="product.html?id=2">
-                <img src="assets/images/chair2.png" alt="chair2" />
-                <p>chair2</p>
-                <p>100SAR</p>
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="product.html?id=3">
-                <img src="assets/images/chair3.png" alt="chair3" />
-                <p>chair3</p>
-                <p>100SAR</p>
-            </a>
-        </div>
-        <div class="grid-item">
-            <a href="product.html?id=4">
-                <img src="assets/images/chair4.png" alt="chair4" />
-                <p>chair4</p>
-                <p>100SAR</p>
-            </a>
-        </div>
+        </div> -->
     </div>
+    <script src="./assets//js/data.js" lang="javascript"></script>
+    <script>
+        for (let i = 0; i < chairs.length; i++) {
+            const chair = chairs[i];
+            const gridItem = document.createElement("div");
+            gridItem.classList.add("grid-item");
+            gridItem.innerHTML = `
+                <a href="product.html?id=${chair.id}">
+                    <img src="${chair.image}" alt="${chair.name}" />
+                    <p>${chair.name}</p>
+                    <b>${chair.price}SAR</b>
+                </a>
+            `;
+            document.querySelector(".grid-container").appendChild(gridItem);
+        }
+    </script>
+    <script src="./assets//js/navbar.js" lang="javascript"></script>
     <script src="./assets//js/footer.js" lang="javascript"></script>
 </body>
 

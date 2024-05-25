@@ -33,11 +33,14 @@
         figure:hover {
             transform: scale(1.1);
         }
+
+        #description {
+            max-width: 25rem;
+        }
     </style>
 </head>
 
 <body>
-    <script src="./assets//js/navbar.js" lang="javascript"></script>
     <main class="flex flex-col flex-md-row-reverse">
         <div>
             <figure id="activeImage" style="max-width: 15rem;">
@@ -57,18 +60,20 @@
                 </figure>
             </div>
         </div>
-        <div class="flex flex-col justify-between items-start" style="min-height: 15rem; min-width: 20rem;">
+        <div class="flex flex-col justify-between items-start">
             <article style="text-align: start;">
                 <h1>كرسي مكتبي</h1>
                 <p id="description">الوصف: كرسي مكتبي مريح</p>
             </article>
-            <div style="width: 15rem;" class="flex flex-col">
-                <p id="price" style="width: 100%">السعر: 100$</p>
-                <a href="./contact.html" style="width: 100%; text-align: center;" class="buy">اطلبه الان</a>
+            <div class="flex flex-col" style="width: 100%">
+                <b id="price" style="width: 100%">السعر: 100$</b>
+                <a href="./contact.html" style="text-align: center;" class="buy">Order Now!</a>
             </div>
         </div>
     </main>
+    <script src="./assets/js/data.js" lang="javascript"></script>
     <script src="./assets/js/product.js" lang="javascript"></script>
+    <script src="./assets//js/navbar.js" lang="javascript"></script>
     <script src="./assets//js/footer.js" lang="javascript"></script>
 </body>
 
